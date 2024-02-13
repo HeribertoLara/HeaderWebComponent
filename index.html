@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Web Components</title>
+    
 </head>
 <body>
-    <my-header
-        image="./download.png"
-        first="Spanish"
-        second="US / CAN 1 (800)728-7307"
-        third="MEX / REST OF THE WORLD"
-    >
-    </my-header>
-    <script  type="module" src="./header/header.js" ></script>
+    <header class="header">
+        <section class="header__section">
+            <img src="./download.png" class="header__image" />
+            
+        </section>
+        <button class="header__button header__button--toggle"> 
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        <section class="header__menu">
+            
+
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="list__item">
+                    <a href="#" class="item__link">
+                        primero
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">
+                        segundo
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">
+                        tercero
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </section>
+    </header>
+<script type="module" src="index.js"></script>
+    
+  <!--   <script  type="module" src="./header/header.js" ></script> -->
     
 </body>
 </html>
